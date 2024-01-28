@@ -36,6 +36,8 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  background-color: #f3f5fa;
+
 }
 img {
   display: block;
@@ -75,7 +77,7 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #999;
+  background-color: #9bc0e2;
 }
 .colors td{
   width: 25%;
@@ -101,7 +103,7 @@ nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 nav  {
   list-style-type: none;
