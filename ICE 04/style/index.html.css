@@ -1,0 +1,51 @@
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    background-color: #7599f5;
+    h1:hover {
+        color: black
+    }
+  
+  }
+p{
+    color:white
+}
+h3{
+    color:white
+}
+h1{
+     color:white;
+    }
+p2{
+    color:white;
+    margin: 35px;
+    font-size: 20px;
+
+       } 
+        
+
+
+img { 
+    width: 300px; display: block; margin: 0 auto; 
+}
+
+div.listt {
+    text-align: center;
+  }
+  
+  ul.list {
+    display: inline-block;
+    text-align: left;
+  }
+
+h4{
+    text-align: left;
+    margin: center;
+}
+
+
+footer { padding: 20px; }
