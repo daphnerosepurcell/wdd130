@@ -34,7 +34,7 @@
 /* Activity 2 styles */ 
 .content2 {
   display: grid;
-  grid-template-columns:
+  grid-template-columns: repeat(5, 50px)
 
 }
 .red2 {
