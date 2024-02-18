@@ -35,7 +35,6 @@
 .content2 {
   display: grid;
   grid-template-columns: repeat(5, 50px)
-
 }
 .red2 {
   width: 100px; 
