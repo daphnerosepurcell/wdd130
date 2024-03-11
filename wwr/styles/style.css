@@ -10,6 +10,10 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
+.logo {
+    width: 100%;
+    height: 100%;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -17,10 +21,11 @@ nav {
 
 #logo_link  {
     padding-top: 5px;
-    padding-left: 20px
+    padding-left: 20px;
     justify-self: center;
     align-self: center;
 }
+
 .home-title{
     color: #e9c692;
     font-family: "Chakra Petch", arial, sans-serif;
@@ -61,10 +66,12 @@ nav a {
     color: #e4a470;
     text-decoration: none;
     padding: 35px;
+    width: 50%;
+    height: 50%;
 }
 nav a:hover {
-    background-color: #9A612F;
-    color: #2f97ec;
+    background-color: #724a2888;
+    color: #5db0f3;
 }
 .book, .join {
     background-color: #dfb087;
@@ -204,45 +211,158 @@ footer .social img {
 }    
                   
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 25px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
+#hero, .home-grid {
+    display: block;
+    height: auto;
+}
+nav, footer {
+    flex-direction: column;
+}
+nav a {
+    display: block;
+    padding: 15px;
+}
+#hero {
+    margin-top: 0;
+}
+#hero-msg {
+    margin-top: 0;
+}
+#hero-msg h4 {
+    display: none;
+}
+#hero-msg h1 {
+    color: #6f7364;
+}
+.home-title {
+    font-size: 25px;
+}
+.rivers-card, .camping-card, .rapids-card { 
+    margin: 50px auto;
+    width: 60%;
+}
+#background {
+    display: none;
+}
+.mountains, .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+}
+footer {
+    margin-top: 25px;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slider {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: rgba(192, 116, 45, 0.404);
+    transform-origin: center center;
+    transform: scale(1);
+  }
+  .slides img {
+    max-width: 100%; 
+    opacity: 80%;
+    height: auto;
+}
+  
+  .slide a {
+    background: none;
+    border: none;
+  }
+  
+  a.slide__prev,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+  }
+  
+  a.slide__next,
+  .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+  }
+  
+  .slider::before,
+  .slider::after,
+  .slide__prev,
+  .slide__next {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+  }
+  .text {
+    color: #221b11;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 10px #626658;
+    border: 2px solid #87cbdf71;
+    background-color:#7ea9b6cc;
+}
+.rivername {
+    color: #221b11;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: start;
+    top: 10px;
+    box-shadow: 5px 5px 10px #626658;
+    border: 2px solid #87cbdf71;
+    background-color:#b9c8cca6;
+
 }

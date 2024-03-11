@@ -151,6 +151,11 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+.hometown {
+  width: 25%;
+  height: 25%;
+
+}
 .sm-page3 {
   grid-area: page3;
   background-color: #ccc;
