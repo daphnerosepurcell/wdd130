@@ -2,7 +2,7 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #b5acc7   ;
@@ -12,7 +12,7 @@ Fonts are separated by a | */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat";
-  --paragraph-font: "Montserrat", "Chakra Petch", sans-serif;
+  --paragraph-font: "Montserrat", libre, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #80809c;  /* headlines on a white background */ 
