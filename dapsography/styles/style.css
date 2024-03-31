@@ -7,95 +7,91 @@ body {
     margin: 0;
     padding: 0;
 }
-header {
-    display: grid;
-    grid-template-columns: 150px auto;
+.header {
+    z-index:0;
+    height: 230px;
+    padding: 20px 0 70px 0;
+    display: flex;
+    justify-content: space-between; /* Align items at the start and end */
+    align-items: center; /* Vertically center items */
+    background-color: #131118;
+    grid-template-columns: 100px auto;
+    text-align: center;
 }
 .logo {
-    width: 100%;
+    width: 100px;
+    padding-top: 5px;
+    padding-right: 20px;
     height: 100%;
 }
-nav {
-    z-index: 2;
-    display: flex;
-    justify-content: space-around;
-}
-
 #logo_link  {
-    z-index: 3;
     padding-top: 5px;
     padding-left: 20px;
     justify-self: center;
     align-self: center;
 }
-
-.home-title{
-    color: #e9c692;
-    font-family: "Montserrat", arial, sans-serif;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
 #background {
     height: 725px;
     width: 100%;
     background-color: #adb8bd;
+    margin-top: linear-gradient(from top, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
 
-}
-div.content {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-}
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-h2 {
-    font-family: "Montserrat", arial, sans-serif;
-    font-weight: 300;
-    color: white;
-    justify-self: stretch;
-    letter-spacing: 5px;
-    text-shadow:1px 1px px #2a072cc0;
-}
-h3 {
-    margin: 0;
 }
 h4{
     color: #dfc89e;
 }
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -100px;
+}
 nav a {
-    text-align: center;
+    z-index: 2;
     text-decoration: none;
-    color: #ffffff;
+    font-size: 15px;
+    color: #dfcaa5;
     padding: 15px;
     width: 20%;
     height: 20%;
-    -webkit-text-fill-color: rgba(93, 86, 95, 0.788); 
-    -webkit-text-stroke: 1px rgb(97, 88, 79);
-    z-index: 1;
+}
+nav a {
+    background-color: #131118;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%);
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%);
+}
+h3 {
+    -webkit-text-fill-color: rgba(225, 217, 228, 0.788); 
+    -webkit-text-stroke: 0.9px rgb(228, 159, 30); 
+    font-family: "Montserrat", arial, sans-serif;
+    font-weight: 250;
+    color: white;
+    justify-self: stretch;
+    letter-spacing: 5px;
+    text-shadow:1px 1px #2a072c3d;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgb(131, 99, 40);
+    text-shadow: 1px 3px 1px rgb(231, 163, 245);
 }
 nav a:hover {
-    -webkit-text-stroke: 1px rgba(255, 233, 134, 0.788);
+    -webkit-text-stroke: 1px #3d3b3d;
+    text-shadow: 2px 2px 2px black;
     color: #5a005e;
-    background-color: #fffbe98e;
+    background-color: #f1e8bd8e;
+    transform: scale(1.1)
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
 }
 #hero-img {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     width: 100%;
+    background: linear-gradient(320deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    z-index: 1;
     margin-top: -100px; 
+    
 }
 .inner-wrap {
     display: flex;
@@ -120,38 +116,33 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     width: 100%;
-    margin-top: -100px; 
+    background: linear-gradient(320deg, rgba(255, 0, 0, 0.4), rgba(128,0,128,0.4));
+    z-index: 1;
+    margin-top: linear-gradient(from top, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
+    margin-bottom: linear-gradient(from bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0))
+    
 }
 #hero-msg h2 {
     text-align: center;
     -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px black; 
+    font-size: 2.5em;
 }
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr)
-}
 main section {
     text-align: center;
 }
 main section img {
     box-sizing: border-box;
-}
-.msg {
-    background-color: #7fb3e0;
-    line-height: 1.5em;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
+    
 }
 footer{
-    background-color: #bbb2bd;
-    color: #f1dd81;
+    background-color: #141314cb;
+    color: #f0db81;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -159,24 +150,15 @@ footer{
     align-items: center;
 }
 footer a {
-    color: #3b4050;
+    color: #e4c01fde;
     text-decoration: none;
 }
 footer a:hover {
-    color: #dfd28cb9;
+    color: #cc8cdfb9;
 }
 footer p {
-    font-size: 1.2em;
-}
-footer p a:hover {
-    text-decoration: underline;
-}
-footer .social img {
-    padding-top: 15px;
-}    
-footer {
-    margin-top: 25px;
-}
+    font-size: 0.89em;
+} 
 
 .hero-text-overlay {
     position: absolute;
@@ -205,3 +187,66 @@ footer {
         opacity: 1;
     }
 }
+.cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    display: block;
+    margin-top:10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.picture-stuff{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.city-img, .card-img, .palm-img{
+    max-width: 39.375rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    animation: fadeInScroll 2s ease-in; 
+    align-content: center;
+}
+
+
+.cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cs-flex-wrapper {
+    max-width: 37.5rem;
+    display: contents;
+  }
+  .cs-title {
+    font-weight: 150;
+    font-family: "Montserrat", arial, sans-serif;
+    color: white;
+    align-self: center;
+    margin-top: 100px
+  }
+  .cs-wrapper {
+    max-width: 39.5rem;
+  }
+  .cs-text {
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
