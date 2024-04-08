@@ -84,6 +84,12 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
+#hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #hero-img {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -91,7 +97,15 @@ nav a:hover {
     background: linear-gradient(320deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
     z-index: 1;
     margin-top: -100px; 
-    
+}
+#hero-img2 {
+    width: 75%;
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3em;
+    border-color:#131118;
 }
 .inner-wrap {
     display: flex;
@@ -250,3 +264,67 @@ footer p {
     position: relative;
     z-index: 1;
   }
+  form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    background-color: #726683b0;
+    border: 1px solid #e2bb3da9;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  form li + li {
+    margin-top: 1em;
+  }
+  label {
+    display: grid;
+    width: 90px;
+    font-size: 0.8em;
+    font: "Montserrat";
+
+  }
+  
+  input,
+  textarea {
+    font: 0.7em "Montserrat";
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #8d826993;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: 1em;
+  }
+  #feedback {
+    background-color: rgba(255, 209, 125, 0.623);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;
+    font-size: 1em;
+    text-align: center;
+}
+.moveDown {
+    margin-top: 3em;
+}
+       
