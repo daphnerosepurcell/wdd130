@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div id="content">
     <header>
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo-png.png" alt="Dapsography">
@@ -21,37 +20,35 @@
     </header>
     <main>
         <div id="hero2">
-            <div id="hero-box2">
-                <img id="hero-img2" src="images/lights.jpg" alt="lighting">
-            </div>
-            <section id="hero-msg">
-                <div class="hero-text-overlay">
-                    <div class="inner-wrap">
-                        <form action="/my-handling-form-page" method="post">
-                            <ul>
-                              <li>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="user_name" />
-                              </li>
-                              <li>
-                                <label for="mail">Email:</label>
-                                <input type="email" id="mail" name="user_email" />
-                              </li>
-                              <li>
-                                <label for="msg">Inquiry:</label>
-                                <textarea id="msg" name="user_message"></textarea>
-                              </li>
-                              <li class="button">
-                                <button type="submit">Submit</button>
-                              </li>
-                            </ul>
-                          </form>
-                    </div>
-                </div>
-            </section>
+            <div id="hero-box">
+            <img id="hero-img2" src="images/lights.jpg" alt="Lights">
         </div>
-        <div id="feedback"></div>
-    </main>
+        <section id="hero-msg">
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Inquiry:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+    </main>    
+    <footer>
+        <p>Dapsography&copy; 2024 - Daphne Purcell</p>
+        <p><a href="contactus.html">Contact Us</a></p>
+    </footer> 
     <script>
         const feedbackElement = document.getElementById('feedback');
         const formElement = document.forms[0];
@@ -62,10 +59,5 @@
             document.body.classList.toggle('moveDown');
         });
     </script>    
-    </section>
 </body> 
-<footer>
-    <p>Dapsography&copy; 2024 - Daphne Purcell</p>
-    <p><a href="contactus.html">Contact Us</a></p>
-</footer> 
 </html>
