@@ -107,6 +107,7 @@ nav a:hover {
     border: 50px;
     border-color:#131118;
 }
+
 .inner-wrap {
     display: flex;
     justify-content: center;
@@ -142,6 +143,12 @@ nav a:hover {
     -webkit-text-stroke: 1.5px black; 
     font-size: 2.5em;
 }
+h2 {
+    text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px black; 
+    font-size: 2.5em;
+}
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
@@ -152,6 +159,21 @@ main section {
 }
 main section img {
     box-sizing: border-box;
+    
+}
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    border: 10px solid #d9c2a3;
+    background-color: #a096844f;
+}
+.city-img, .msg p {
+    margin-top: 200px;
+    font-weight: 100;
+    margin-right: 10px;
+    border: 5px solid(#e0b86ec4);
     
 }
 footer{
@@ -213,18 +235,20 @@ footer p {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     display: block;
-    margin-top:10%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
 }
 .picture-stuff{
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
 }
-.city-img, .card-img, .palm-img{
+.city-img {
+    float: right;
+    margin-right: 10px;
+    clear:both;
     max-width: 39.375rem;
-    margin: 0 0 2rem 0;
+    margin: 100px auto;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -235,37 +259,45 @@ footer p {
     animation: fadeInScroll 2s ease-in; 
     align-content: center;
 }
-
-
-.cs-content {
-    text-align: center;
-    width: 100%;
+.card-img{
+    float: left;
+    margin-right: 10px;
+    clear:both;
+    max-width: 39.375rem;
+    margin: 100px auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .cs-flex-wrapper {
-    max-width: 37.5rem;
-    display: contents;
-  }
-  .cs-title {
-    font-weight: 150;
-    font-family: "Montserrat", arial, sans-serif;
-    color: white;
-    align-self: center;
-    margin-top: 100px
-  }
-  .cs-wrapper {
-    max-width: 39.5rem;
-  }
-  .cs-text {
-    max-width: 40rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
-  }
-  form {
+    gap: 0.75rem;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    animation: fadeInScroll 2s ease-in; 
+    align-content: center;
+}
+.palm-img {
+    float: left;
+    margin-right: 10px;
+    clear:both;
+    max-width: 39.375rem;
+    margin: 100px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    animation: fadeInScroll 2s ease-in; 
+    align-content: center;}
+.city-img, .msg {
+    width: 80%;
+    display: block;
     margin: 0 auto;
+}
+
+  form {
+    margin: 100px auto;
     width: 500px;
     padding: 1em;
     background-color: #726683b0;
@@ -327,4 +359,3 @@ footer p {
 .moveDown {
     margin-top: 3em;
 }
-       
